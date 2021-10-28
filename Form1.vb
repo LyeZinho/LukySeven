@@ -1,6 +1,8 @@
 ﻿Imports LukySeven.SpinFunctions
 
 Public Class Form1
+    Dim tryes As Short
+    Dim wins As Short
 
     Private Sub BtSpin_Click(sender As Object, e As EventArgs) Handles BtSpin.Click
 
@@ -26,7 +28,12 @@ Public Class Form1
             PcbImg2.Visible = True
             PcbImg3.Visible = True
             BtWin.Visible = True
+            wins = wins + 1
+            BtWinRate.Text = SpinFunctions.WinRate(tryes, wins)
         End If
+        tryes = tryes + 1
+        BtTryes.Text = tryes.ToString
+
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load

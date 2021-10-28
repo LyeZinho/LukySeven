@@ -31,6 +31,8 @@ Partial Class Form1
         Me.PcbImg1 = New System.Windows.Forms.PictureBox()
         Me.PcbImg3 = New System.Windows.Forms.PictureBox()
         Me.BtWin = New System.Windows.Forms.Button()
+        Me.BtWinRate = New System.Windows.Forms.Button()
+        Me.BtTryes = New System.Windows.Forms.Button()
         CType(Me.PcbImg2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PcbImg1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PcbImg3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -127,12 +129,33 @@ Partial Class Form1
         Me.BtWin.Text = "WIN"
         Me.BtWin.UseVisualStyleBackColor = True
         '
+        'BtWinRate
+        '
+        Me.BtWinRate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtWinRate.Location = New System.Drawing.Point(12, 241)
+        Me.BtWinRate.Name = "BtWinRate"
+        Me.BtWinRate.Size = New System.Drawing.Size(97, 27)
+        Me.BtWinRate.TabIndex = 9
+        Me.BtWinRate.Text = "0.0%"
+        Me.BtWinRate.UseVisualStyleBackColor = True
+        '
+        'BtTryes
+        '
+        Me.BtTryes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtTryes.Location = New System.Drawing.Point(12, 286)
+        Me.BtTryes.Name = "BtTryes"
+        Me.BtTryes.Size = New System.Drawing.Size(97, 27)
+        Me.BtTryes.TabIndex = 10
+        Me.BtTryes.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.BtTryes)
+        Me.Controls.Add(Me.BtWinRate)
         Me.Controls.Add(Me.BtWin)
         Me.Controls.Add(Me.PcbImg3)
         Me.Controls.Add(Me.PcbImg1)
@@ -160,4 +183,6 @@ Partial Class Form1
     Friend WithEvents PcbImg1 As PictureBox
     Friend WithEvents PcbImg3 As PictureBox
     Friend WithEvents BtWin As Button
+    Friend WithEvents BtWinRate As Button
+    Friend WithEvents BtTryes As Button
 End Class

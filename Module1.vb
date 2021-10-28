@@ -17,4 +17,10 @@ Module SpinFunctions
         End If
     End Function
 
+    Function WinRate(_tryes As Short, _wins As Short) As String
+        Dim Percent As Single
+        Percent = _tryes / _wins
+        Return Format(Percent, "0.0%")
+    End Function
+
 End Module
