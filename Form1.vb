@@ -31,6 +31,7 @@ Public Class Form1
             wins = wins + 1
             BtWinRate.Text = SpinFunctions.WinRate(tryes, wins)
         End If
+
         tryes = tryes + 1
         BtTryes.Text = tryes.ToString
 
