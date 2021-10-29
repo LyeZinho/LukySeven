@@ -1,2 +1,2 @@
 # LukySeven
-Luky game
+Luky game simple project
