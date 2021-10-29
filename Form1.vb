@@ -1,5 +1,4 @@
 ﻿Imports LukySeven.SpinFunctions
-
 Public Class Form1
     Dim tryes As Short
     Dim wins As Short

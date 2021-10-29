@@ -1,4 +1,5 @@
-﻿
+﻿Imports Newtonsoft.Json.Linq
+Imports System.IO
 Module SpinFunctions
 
     Function Gen(_lower As Integer, _higher As Integer)
@@ -19,7 +20,7 @@ Module SpinFunctions
 
     Function WinRate(_tryes As Short, _wins As Short) As String
         Dim Percent As Single
-        Percent = _tryes / _wins
+        Percent = _wins / _tryes
         Return Format(Percent, "0.0%")
     End Function
 
